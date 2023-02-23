@@ -10,7 +10,7 @@ function teste() {
     console.log(aluno2);
     return aluno2;
 }
-
+console.log(aluno2);
 
 if (aluno == "João"){
     let resultado = "Olá João";
