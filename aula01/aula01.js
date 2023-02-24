@@ -1,5 +1,6 @@
 alunos = "Daniel"
 aluno = 10.0
+typeof aluno;//Mostra o tipo da variavel digitada.
 
 console.log("alunos");
 console.log("aluno");
@@ -11,3 +12,4 @@ if (numero1 == numero2){
 }else{
     console.log("Os valores são diferentes.")
 }
+typeof aluno;

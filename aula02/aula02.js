@@ -10,7 +10,7 @@ function teste() {
     console.log(aluno2);
     return aluno2;
 }
-console.log(aluno2);
+
 
 if (aluno == "João"){
     let resultado = "Olá João";
@@ -21,3 +21,7 @@ if (aluno == "João"){
 }
 //console.log(resultado);//O let só funciona dentro da função.Por isso não funciona aqui.
 console.log(resultado2)
+
+for(var i=1;i<=10;i++){
+    console.log("Número: " + i);
+}
