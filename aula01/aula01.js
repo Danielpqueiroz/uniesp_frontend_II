@@ -1,6 +1,6 @@
 alunos = "Daniel"
 aluno = 10.0
-typeof aluno;//Mostra o tipo da variavel digitada.
+console.log(typeof aluno);//Mostra o tipo da variavel digitada.
 
 console.log("alunos");
 console.log("aluno");
