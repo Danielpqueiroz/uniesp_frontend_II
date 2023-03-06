@@ -27,10 +27,10 @@ for (var i = 1; i<=15; i++){
 
     if (sexo[i] == "M" || sexo[i] == "m"){
         soma = soma + altura[i];
-        contador = contador + 1;
+        contador++;
 
     }else if(sexo[i] == "F" || sexo[i] == "f"){
-        qtdMulher = qtdMulher + 1;
+        qtdMulher++;
     }else{
         alert("ERRO")
     }
