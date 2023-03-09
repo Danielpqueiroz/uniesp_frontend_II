@@ -25,7 +25,7 @@ for (var i = 1; i<=15; i++){
     } 
     
 
-    if (sexo[i] == "M" || sexo[i] == "m"){//Ou sexo.toLocalUpperCase() e retorna os caracteres em caixa alta.
+    if (sexo[i] == "M" || sexo[i] == "m"){//Ou sexo.toLocalUpperCase() e retorna os caracteres em caixa alta
         soma = soma + altura[i];
         contador = contador + 1;
 
