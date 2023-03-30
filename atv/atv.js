@@ -15,8 +15,6 @@ function maiorIgual (n1){
 }
 
 
-
-
 var numeros = [1,2,3];
 
 /*function multiplicado(){
