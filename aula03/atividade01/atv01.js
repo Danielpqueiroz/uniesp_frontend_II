@@ -25,7 +25,7 @@ for (var i = 1; i<=15; i++){
     } 
     
 
-    if (sexo[i] == "M" || sexo[i] == "m"){
+    if (sexo[i] == "M" || sexo[i] == "m"){//Ou sexo.toLocalUpperCase() e retorna os caracteres em caixa alta
         soma = soma + altura[i];
         contador++;
 
@@ -36,7 +36,7 @@ for (var i = 1; i<=15; i++){
     }
 }
 
-resultado = soma/contador;
+resultado = (soma/contador).toFixed(2);
 
-var mensagem = "A maior altura é: " + maiorAltura + "\nA menor altura é: " + menorAltura + "\nA media da altura dos homens é: " + resultado.toFixed(2) + "\nA quantidade de mulheres é: " + qtdMulher;
+var mensagem = "A maior altura é: " + maiorAltura + "\nA menor altura é: " + menorAltura + "\nA media da altura dos homens é: " + resultado + "\nA quantidade de mulheres é: " + qtdMulher;
 alert(mensagem);
