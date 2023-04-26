@@ -48,35 +48,3 @@ if (array.length === 0){
         console.log(elemento);
     });//Percorre a lista mostrando os valores
 }
-atividade atual
-
-let pessoa = {nome : "Daniel", idade : 25, profição :"engenheiro", endereço: {Logradouro:"Rua", bairro : "Bancarios", cidade : "João Pessoa", cep : 58051572 }};
-
-
-function Mostrar(pessoa){
-    console.log(pessoa, pessoa.endereço);
-    
-}
-pessoa.telefone = 88065465;
-Mostrar(pessoa);
-obterDados(pessoa);
-
-
-
-
-function obterDados() {
-  let dados = "";
-  for (let propriedade in pessoa) {
-    if(propriedade == "endereço" ){
-        for (let propriedade1 in pessoa.endereço){
-            dados += propriedade1 + ": " + pessoa.endereço[propriedade1] + ".\n ";
-        }
-    }else{
-    dados += propriedade + ": " + pessoa[propriedade] + ".\n ";
-  }}
-  // Remove a vírgula e o espaço extra no final da string
-  dados = dados.slice(0, -2);
-  return dados;
-}
-
-console.log(obterDados());
