@@ -33,6 +33,11 @@ function obterDados() {
   dados = dados.slice(0, -2);
   return dados;
 }
+function obterDados2(){
+    var dados = ("Nome: "+ pessoa.nome + " \nIdade: "+ pessoa.idade + " \nProfissão: " + pessoa.profição + "\nLogradouro: " + pessoa.endereço.logradouro+ "\nBairro: " + pessoa.endereço.bairro + "\nCidade: " + pessoa.endereço.cidade + "\nCEP: " + pessoa.endereço.cep);
+    return dados;
+}
+
 //Resposta item 05
 function comparar(){
     let exemplo ={nome: "Daniel", idade: 25};
@@ -60,3 +65,4 @@ obterDados(pessoa);
 console.log(obterDados());
 console.log(comparar());
 console.log(comparar2());
+console.log(obterDados2());
