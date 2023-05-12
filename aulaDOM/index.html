@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="titulo">Sistemas de Mensagens </h1>
+
+    <br>
+    <label for="">Nome:</label>
+    <br>
+    <input type="text" name="" id="iptNome">
+    <br>
+    <label for="">Mensagem</label>
+    <br>
+    <textarea name="" id="txaMensagem" cols="30" rows="10"></textarea>
+    <br>
+    <br>
+    <button onclick="cadastrar();"> Cadastrar</button>
+    <button onclick="estilizarTabela();">Estilizar a Tabela</button>
+    <br>
+    <br>
+    <br>
+
+    <h2>Lista de Mensagens Cadastradas</h2>
+    <table border="1" id="tabela"> 
+        <tr>
+            <th>Nome</th>
+            <th>Mensagem</th>
+        </tr>
+    </table>
+
+    <script src="dom.js"> </script>
+</body>
+</html>
