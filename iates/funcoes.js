@@ -15,6 +15,25 @@ function validar() {
 
 }
 
+function criarObjeto() {
+    var nome = document.getElementById("iptNomeMsg").value;
+    var email = document.getElementById("iptEmailMsg").value;
+    var mensagem = document.getElementById("txaMensagemMsg").value;
+
+    var obj = { nome: nome, email: email, mensagem: mensagem };
+    console.log(obj);
+    inserirMensagem(obj);
+}
+
+function login() {
+    var email = document.getElementById("iptEmail").value;
+    var senha = document.getElementById("iptSenha").value;
+
+    var objLogin = {email: email, senha: senha};
+    console.log(objLogin);
+    validar();
+
+}
 
 
 function obterMensagens() {

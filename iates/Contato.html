@@ -2,6 +2,8 @@
 
 	<head>
 		<link href="CSS/Style.css" rel="stylesheet"/>
+		<script src=" jquery-3.6.4.min.js"></script>
+		<script src="funcoes.js"></script> 
 
 		<title>Contato</title>
 
@@ -38,8 +40,37 @@
 						
 			</header>
 
-        
+			<div id="mensagem" class="container">
+				<h1 id="titulo" class="itens">Sistema de Mensagem</h1>
+				<br>
+				<label for=""class="itens">Nome: </label>
+				<br>
+				<input type="text" id="iptNomeMsg">
+				<br>
+				<label for=""class="itens">Email: </label>
+				<br>
+				<input type="text" id="iptEmailMsg">
+				<br>
+				<label for=""class="itens">Mensagem: </label>
+				<br>
+				<textarea name="" id="txaMensagemMsg" cols="30" rows="10"class="itens"></textarea>
+				<br>
+				<br>
+				<button onclick="criarObjeto()"class="itens">Cadastrar</button>
+			</div>
+
+			<div id="dtabela">
+				<h2>Lista de Mensagens Cadastradas</h2>
+				<table border="1" id="tabela"> 
+					<tr>
+						<th>Nome</th>
+						<th>Email</th>
+						<th>Mensagem</th>
+					</tr>
+				</table>
+			</div>
         	
 		</div>
+
     </body>
 </html>
