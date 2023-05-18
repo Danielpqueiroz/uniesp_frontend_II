@@ -31,10 +31,38 @@ function login() {
 
     var objLogin = {email: email, senha: senha};
     console.log(objLogin);
-    validar();
+    validar(email, senha);
 
 }
+function criarLinhasTabela() {
+    var mensagens = obterMensagens();
+    
+    
+    for (var i = 0; i < mensagens.length; i++) {
+        var nome = this.nome[i];
+        var email = this.email[i];
+        var mensagem = this.mensagem[i];
 
+        var linha = document.createElement('tr');
+
+        var tdNome = document.createElement('td');
+        tdNome.innerHTML = nome;
+
+        var tdEmail = document.createElement('td');
+        tdEmail.innerHTML = email;
+    
+        var tdMensagem = document.createElement('td');
+        tdMensagem.innerHTML = mensagem;
+    
+        linha.appendChild(tdNome);
+        linha.appendChild(tdEmail);
+        linha.appendChild(tdMensagem);
+    
+        var tabela = document.getElementById("tabela");
+        tabela.appendChild(linha);
+    }
+}
+//window.onload = criarLinhasTabela;
 
 function obterMensagens() {
 

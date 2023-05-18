@@ -222,6 +222,9 @@ button{
     color: white;
     font-size: 15px;
 }
+table{
+    display: inline-block;
+}
 /* --------------------------------------------------------------------------------- */
 #footer{
     background-color:rgba(26, 50, 67, 0.15);
