@@ -31,7 +31,7 @@ function login() {
 
     var objLogin = {email: email, senha: senha};
     console.log(objLogin);
-    validar(email, senha);
+    validar();
 
 }
 function criarLinhasTabela() {
