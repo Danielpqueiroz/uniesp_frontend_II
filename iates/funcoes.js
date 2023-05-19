@@ -39,9 +39,9 @@ function criarLinhasTabela() {
     
     
     for (var i = 0; i < mensagens.length; i++) {
-        var nome = this.nome[i];
-        var email = this.email[i];
-        var mensagem = this.mensagem[i];
+        var nome = mensagens[i].nome;
+        var email = mensagens[i].email;
+        var mensagem = mensagens[i].mensagem;
 
         var linha = document.createElement('tr');
 
@@ -61,6 +61,23 @@ function criarLinhasTabela() {
         var tabela = document.getElementById("tabela");
         tabela.appendChild(linha);
     }
+    estilizarTabela();
+}
+function estilizarTabela(){
+
+    var linhas = document.getElementsByTagName('tr');
+    var pintar = true;
+
+    for(var i = 1; i<linhas.length; i++){
+
+        if(pintar){
+            linhas[i].setAttribute('style', 'background-color:gray; color:write;')
+            pintar = false;
+        }else {
+            pintar = true;
+        }
+    }
+
 }
 //window.onload = criarLinhasTabela;
 
@@ -116,7 +133,7 @@ function validarUsuario(objLoginSenha) {
 
     var consulta = $.ajax({
         url: 'http://prj-p2-js.herokuapp.com/usuarios/validar',
-        method: 'GET',
+        method: 'POST',
         dataType: 'json',
         async: false,
         data: JSON.stringify(objLoginSenha),
