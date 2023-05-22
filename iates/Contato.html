@@ -41,24 +41,24 @@
 						
 			</header>
 
-			<div id="mensagem" class="container">
+			<form id="mensagem" class="container">
 				<h1 id="titulo" class="itens">Sistema de Mensagem</h1>
 				<br>
 				<label for=""class="itens">Nome: </label>
 				<br>
-				<input type="text" id="iptNomeMsg">
+				<input type="text" id="iptNomeMsg" required="">
 				<br>
 				<label for=""class="itens">Email: </label>
 				<br>
-				<input type="text" id="iptEmailMsg">
+				<input type="email" id="iptEmailMsg" required="">
 				<br>
 				<label for=""class="itens">Mensagem: </label>
 				<br>
-				<textarea name="" id="txaMensagemMsg" cols="30" rows="10"class="itens"></textarea>
+				<textarea name="" id="txaMensagemMsg" required="" cols="30" rows="10"class="itens"></textarea>
 				<br>
 				<br>
 				<button onclick="criarObjeto()"class="itens">Cadastrar</button>
-			</div>
+			</form>
 
 			
         	

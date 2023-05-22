@@ -44,6 +44,7 @@ header{
 h1{
     color: #1BB4E8;
     margin: 0;
+    padding-top: 30px;
     font-family: arial, helvetica, sans-serif;
     font-style: italic;
     /* background-color: rgb(87, 105, 209); */
@@ -190,49 +191,49 @@ nav ul li{
 }
 
 .container {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    place-items: center;
     
-    /* height: 450px; */
-    width: 100%;
-    text-align: center;
-    padding: 15px;
-    margin-top: 0;
-    margin-left: auto;
-    margin-bottom: 10px;
-    justify-content: center;
-    
+}
 
-}
-.itens{
-    width: 200px;
-    height: 40px;
-    display: inline-block;
-    
-    
-}
 input{
     padding: 10px;
     border-radius: 10px;
 
 }
+
 button{
     background-color: dodgerblue;
     border: none;
     padding: 15px;
-    width: 100%;
-    border-radius: 10px;
+    border-radius: 30%;
     color: white;
-    font-size: 15px;
+    font-size: 20px;
 }
-table{
-    table-layout: auto;
-    justify-content: center;
+.style-table {
     border-collapse: collapse;
-    width: auto;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    
+   
 }
-tr{
-    background-color: red;
-    width: 800px;
+#escopo  {
+    background-color:#21272B;
+    color: #ffffff;
+    text-align: left;
 }
+.style-table th,
+.style-table td {
+    padding: 12px 15px;
+}
+
+
 /* --------------------------------------------------------------------------------- */
 #footer{
     background-color:rgba(26, 50, 67, 0.15);

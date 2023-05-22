@@ -71,7 +71,7 @@ function estilizarTabela(){
     for(var i = 1; i<linhas.length; i++){
 
         if(pintar){
-            linhas[i].setAttribute('style', 'background-color:gray; color:write;')
+            linhas[i].setAttribute('style', 'background-color:#f3f3f3; color:write;')
             pintar = false;
         }else {
             pintar = true;
