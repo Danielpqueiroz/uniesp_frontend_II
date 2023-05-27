@@ -44,20 +44,20 @@
 			<form id="mensagem" class="container">
 				<h1 id="titulo" class="itens">Sistema de Mensagem</h1>
 				<br>
-				<label for=""class="itens">Nome: </label>
+				
 				<br>
-				<input type="text" id="iptNomeMsg" required="">
+				<input type="text" id="iptNomeMsg" placeholder="Nome" required="">
+				
 				<br>
-				<label for=""class="itens">Email: </label>
+				<input type="email" id="iptEmailMsg" placeholder="Email" required="">
 				<br>
-				<input type="email" id="iptEmailMsg" required="">
+				
 				<br>
-				<label for=""class="itens">Mensagem: </label>
+				<textarea name="" id="txaMensagemMsg" required="" placeholder="Mensagem" cols="30" rows="10"class="itens"></textarea>
 				<br>
-				<textarea name="" id="txaMensagemMsg" required="" cols="30" rows="10"class="itens"></textarea>
+				
+				<button onclick="criarObjeto()"class="itens">Enviar</button>
 				<br>
-				<br>
-				<button onclick="criarObjeto()"class="itens">Cadastrar</button>
 			</form>
 
 			
